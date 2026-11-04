@@ -39,7 +39,7 @@ export default function Home() {
 
         {/* Portrait - desktop */}
         <div
-          className="pointer-events-none absolute bottom-0 right-0 top-0 hidden w-[53%] md:block"
+          className="pointer-events-none absolute bottom-0 right-0 top-0 hidden w-[60%] md:block"
           style={{
             maskImage:
               "radial-gradient(ellipse 70% 75% at 60% 52%, black 58%, transparent 100%)",
@@ -60,13 +60,13 @@ export default function Home() {
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-10 max-w-4xl md:w-[65%]">
+        <div className="relative z-10 max-w-4xl md:w-[45%]">
 
           <p className="mb-6 text-sm uppercase tracking-[0.35em] text-[#F15A24]">
             Data Analytics & ML Developer
           </p>
 
-          <h1 className="text-5xl font-bold leading-[1.08] tracking-tight md:text-7xl lg:text-8xl">
+          <h1 className="text-5xl font-bold leading-[1.08] tracking-tight md:text-6xl lg:text-7xl">
             Turning data into{" "}
             <span className="text-[#F15A24]">
               intelligent decisions.
@@ -134,6 +134,88 @@ export default function Home() {
           />
         </div>
       </section>
+
+      
+{/* About Section */}
+<section
+  id="about"
+  className="relative border-t border-white/10 px-6 py-28 md:px-16"
+>
+  <div className="page-container editorial-grid">
+
+    {/* Left Content */}
+    <div className="editorial-left">
+      <p className="mb-5 text-sm uppercase tracking-[0.3em] text-[#F15A24]">
+        01 / About Me
+      </p>
+
+      <h2 className="text-4xl font-bold leading-tight md:text-6xl">
+        More than just
+        <span className="text-[#F15A24]"> data.</span>
+        <br />
+        A problem solver.
+      </h2>
+    </div>
+
+    {/* Right Content */}
+    <div className="editorial-right flex flex-col justify-center">
+      <p className="text-lg leading-9 text-gray-300">
+        I'm a Data Analytics and Machine Learning developer interested
+        in building practical technology that solves real-world problems.
+        I enjoy working with data, exploring patterns, developing
+        intelligent applications and turning ideas into useful products.
+      </p>
+
+      <p className="mt-5 text-base leading-8 text-gray-500">
+        My focus is on combining analytical thinking, machine learning
+        and modern AI tools to create solutions that are useful,
+        meaningful and easy to work with.
+      </p>
+
+      {/* Personal Information */}
+      <div className="mt-10 grid grid-cols-2 gap-6 border-t border-white/10 pt-8">
+
+        <div>
+          <p className="text-xs uppercase tracking-widest text-gray-500">
+            Education
+          </p>
+          <p className="mt-2 text-sm font-medium text-white">
+            B.Tech — CSE (AI & DS)
+          </p>
+        </div>
+
+        <div>
+          <p className="text-xs uppercase tracking-widest text-gray-500">
+            University
+          </p>
+          <p className="mt-2 text-sm font-medium text-white">
+            Gurugram University
+          </p>
+        </div>
+
+        <div>
+          <p className="text-xs uppercase tracking-widest text-gray-500">
+            Location
+          </p>
+          <p className="mt-2 text-sm font-medium text-white">
+            Haryana, India
+          </p>
+        </div>
+
+        <div>
+          <p className="text-xs uppercase tracking-widest text-gray-500">
+            Current Focus
+          </p>
+          <p className="mt-2 text-sm font-medium text-white">
+            AI, ML & Data Analytics
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Footer */}
       <footer className="border-t border-white/10 px-6 py-6 text-center text-xs text-gray-600 md:px-16">
