@@ -217,6 +217,235 @@ export default function Home() {
 </section>
 
 
+
+{/* Projects Section */}
+<section
+  id="projects"
+  className="border-t border-white/10 px-6 py-28 md:px-16"
+>
+  <div className="page-container">
+
+    {/* Section Heading */}
+    <div className="mb-20">
+      <p className="mb-5 text-sm uppercase tracking-[0.3em] text-[#F15A24]">
+        02 / Selected Work
+      </p>
+
+      <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
+        <h2 className="max-w-3xl text-5xl font-bold leading-tight md:text-7xl">
+          Ideas turned into
+          <span className="text-[#F15A24]"> reality.</span>
+        </h2>
+
+        <p className="max-w-sm text-base leading-7 text-gray-400">
+          A collection of projects exploring data, machine learning,
+          artificial intelligence and practical problem-solving.
+        </p>
+      </div>
+    </div>
+
+    {/* Featured Project */}
+    <div className="editorial-grid border-y border-white/10 py-12">
+
+      {/* Featured Project Information */}
+      <div className="editorial-left">
+        <div className="mb-8 flex flex-wrap items-center gap-3">
+          <span className="border border-[#F15A24]/40 px-3 py-1 text-xs uppercase tracking-wider text-[#F15A24]">
+            Featured Project
+          </span>
+          <span className="text-xs text-gray-500">
+            AI / Financial Research
+          </span>
+        </div>
+
+        <h3 className="text-4xl font-bold md:text-6xl">
+          FinSight <span className="text-[#F15A24]">AI.</span>
+        </h3>
+
+        <p className="mt-7 text-lg leading-8 text-gray-300">
+          An AI-powered financial research agent designed to help
+          users explore stocks, compare companies and generate
+          structured investment research.
+        </p>
+
+        <p className="mt-4 text-sm leading-7 text-gray-500">
+          The application brings financial analysis, technical
+          indicators, portfolio insights and AI-powered follow-up
+          conversations into one research workflow.
+        </p>
+
+        {/* Features */}
+        <div className="mt-8 flex flex-wrap gap-2">
+          {[
+            "Stock Comparison",
+            "Portfolio Analysis",
+            "Technical Indicators",
+            "PDF Reports",
+            "AI Chat",
+            "Research History",
+          ].map((feature) => (
+            <span
+              key={feature}
+              className="border border-white/10 px-3 py-2 text-xs text-gray-400"
+            >
+              {feature}
+            </span>
+          ))}
+        </div>
+
+        {/* Technology Stack */}
+        <div className="mt-9">
+          <p className="mb-3 text-xs uppercase tracking-widest text-gray-500">
+            Technologies
+          </p>
+
+          <div className="flex flex-wrap gap-3 text-sm text-gray-300">
+            <span>Python</span>
+            <span className="text-[#F15A24]">/</span>
+            <span>Streamlit</span>
+            <span className="text-[#F15A24]">/</span>
+            <span>LLM</span>
+            <span className="text-[#F15A24]">/</span>
+            <span>ChromaDB</span>
+          </div>
+        </div>
+
+        <div className="mt-10">
+          <a
+            href="https://finresearch-ai.streamlit.app/"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-3 bg-[#F15A24] px-6 py-4 text-sm font-semibold text-white transition hover:bg-[#d94b19]"
+          >
+            Explore FinSight AI <span>↗</span>
+          </a>
+        </div>
+      </div>
+
+      {/* Featured Project Visual */}
+      <div className="editorial-right">
+        <div className="relative min-h-[360px] overflow-hidden border border-white/10 bg-[#14110F] p-6 md:min-h-[460px] md:p-9">
+
+          <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-[#F15A24]/15 blur-[100px]" />
+
+          <div className="relative">
+            <div className="flex items-center justify-between border-b border-white/10 pb-5">
+              <span className="text-sm font-semibold tracking-wide">
+                FinSight <span className="text-[#F15A24]">AI</span>
+              </span>
+              <span className="text-xs text-gray-500">
+                Research Workspace
+              </span>
+            </div>
+
+            <div className="mt-9">
+              <p className="text-xs uppercase tracking-widest text-gray-500">
+                Financial Intelligence
+              </p>
+
+              <h4 className="mt-3 text-3xl font-bold">
+                Research smarter.
+              </h4>
+
+              <p className="mt-2 text-sm text-gray-500">
+                Explore financial data with AI assistance.
+              </p>
+            </div>
+
+            <div className="mt-9 grid grid-cols-2 gap-3">
+              {[
+                ["01", "Stock Comparison"],
+                ["02", "Portfolio Analysis"],
+                ["03", "Technical Signals"],
+                ["04", "Research Reports"],
+              ].map(([number, label]) => (
+                <div
+                  key={number}
+                  className="border border-white/10 bg-white/[0.02] p-4"
+                >
+                  <p className="text-xs text-[#F15A24]">{number}</p>
+                  <p className="mt-3 text-sm text-gray-300">{label}</p>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-8 border-t border-white/10 pt-5">
+              <p className="text-xs text-gray-500">
+                AI-POWERED FINANCIAL RESEARCH
+              </p>
+              <div className="mt-3 h-1 w-full bg-white/10">
+                <div className="h-1 w-2/3 bg-[#F15A24]" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* Other Projects */}
+    <div className="mt-20 grid gap-6 md:grid-cols-2">
+
+      {/* Janvoice AI */}
+      <article className="group border border-white/10 bg-[#111111] p-7 transition hover:border-[#F15A24]/50 md:p-9">
+        <div className="flex items-center justify-between">
+          <span className="text-xs uppercase tracking-widest text-gray-500">
+            Project 02
+          </span>
+          <span className="text-xs text-[#F15A24]">
+            AI Application
+          </span>
+        </div>
+
+        <h3 className="mt-12 text-3xl font-bold">
+          Janvoice <span className="text-[#F15A24]">AI.</span>
+        </h3>
+
+        <p className="mt-5 text-sm leading-7 text-gray-400">
+          An AI project currently being documented for its
+          portfolio case study.
+        </p>
+
+        <div className="mt-12 border-t border-white/10 pt-5">
+          <span className="text-sm text-gray-500 transition group-hover:text-[#F15A24]">
+            Case study coming soon ↗
+          </span>
+        </div>
+      </article>
+
+      {/* CareFlow */}
+      <article className="group border border-white/10 bg-[#111111] p-7 transition hover:border-[#F15A24]/50 md:p-9">
+        <div className="flex items-center justify-between">
+          <span className="text-xs uppercase tracking-widest text-gray-500">
+            Project 03
+          </span>
+          <span className="text-xs text-[#F15A24]">
+            Healthcare / Data
+          </span>
+        </div>
+
+        <h3 className="mt-12 text-3xl font-bold">
+          Care<span className="text-[#F15A24]">Flow.</span>
+        </h3>
+
+        <p className="mt-5 text-sm leading-7 text-gray-400">
+          A collaborative healthcare project exploring sepsis
+          event data and data-driven approaches to healthcare.
+        </p>
+
+        <div className="mt-12 border-t border-white/10 pt-5">
+          <span className="text-sm text-gray-500 transition group-hover:text-[#F15A24]">
+            Case study coming soon ↗
+          </span>
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+
+
       {/* Footer */}
       <footer className="border-t border-white/10 px-6 py-6 text-center text-xs text-gray-600 md:px-16">
         © 2026 Aman Nidhi. All rights reserved.
