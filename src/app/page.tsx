@@ -15,9 +15,23 @@ export default function Home() {
           <Link href="#about" className="transition hover:text-white">
             About
           </Link>
+
           <Link href="#projects" className="transition hover:text-white">
             Projects
           </Link>
+
+          <Link href="#skills" className="transition hover:text-white">
+            Skills
+          </Link>
+
+          <Link href="#experience" className="transition hover:text-white">
+            Experience
+          </Link>
+
+          <Link href="#education" className="transition hover:text-white">
+            Education
+          </Link>
+
           <Link href="#contact" className="transition hover:text-white">
             Contact
           </Link>
@@ -444,6 +458,426 @@ export default function Home() {
   </div>
 </section>
 
+
+{/* Skills Section */}
+<section
+  id="skills"
+  className="border-t border-white/10 px-6 py-28 md:px-16"
+>
+  <div className="page-container">
+
+    <div className="editorial-grid">
+
+      {/* Left: Section Introduction */}
+      <div className="editorial-left">
+        <p className="mb-5 text-sm uppercase tracking-[0.3em] text-[#F15A24]">
+          03 / Technical Expertise
+        </p>
+
+        <h2 className="text-5xl font-bold leading-tight md:text-7xl">
+          The tools behind
+          <span className="text-[#F15A24]"> the ideas.</span>
+        </h2>
+
+        <p className="mt-8 max-w-lg text-base leading-8 text-gray-400">
+          My technical toolkit brings together programming,
+          data analytics, machine learning and modern AI
+          technologies to build practical solutions.
+        </p>
+
+        <div className="mt-12 border-t border-white/10 pt-6">
+          <p className="text-xs uppercase tracking-widest text-gray-500">
+            Areas of interest
+          </p>
+
+          <p className="mt-4 text-lg leading-8 text-gray-300">
+            Data-driven solutions
+            <span className="text-[#F15A24]"> / </span>
+            Intelligent applications
+            <span className="text-[#F15A24]"> / </span>
+            Machine learning
+          </p>
+        </div>
+      </div>
+
+      {/* Right: Skills Categories */}
+      <div className="editorial-right space-y-5">
+
+        {/* Programming & Analytics */}
+        <div className="border border-white/10 bg-[#111111] p-6 md:p-8">
+          <div className="flex items-center justify-between">
+            <h3 className="text-xl font-semibold">
+              Programming & Analytics
+            </h3>
+            <span className="text-sm text-[#F15A24]">01</span>
+          </div>
+
+          <div className="mt-6 flex flex-wrap gap-3">
+            {["Python", "MS Excel", "Power BI"].map((skill) => (
+              <span
+                key={skill}
+                className="border border-white/10 px-4 py-3 text-sm text-gray-300 transition hover:border-[#F15A24] hover:text-[#F15A24]"
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        {/* Machine Learning & AI */}
+        <div className="border border-white/10 bg-[#111111] p-6 md:p-8">
+          <div className="flex items-center justify-between">
+            <h3 className="text-xl font-semibold">
+              Machine Learning & AI
+            </h3>
+            <span className="text-sm text-[#F15A24]">02</span>
+          </div>
+
+          <div className="mt-6 flex flex-wrap gap-3">
+            {[
+              "Machine Learning",
+              "Agentic AI",
+              "LangChain",
+            ].map((skill) => (
+              <span
+                key={skill}
+                className="border border-white/10 px-4 py-3 text-sm text-gray-300 transition hover:border-[#F15A24] hover:text-[#F15A24]"
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        {/* Frameworks */}
+        <div className="border border-white/10 bg-[#111111] p-6 md:p-8">
+          <div className="flex items-center justify-between">
+            <h3 className="text-xl font-semibold">
+              Frameworks & Libraries
+            </h3>
+            <span className="text-sm text-[#F15A24]">03</span>
+          </div>
+
+          <div className="mt-6 flex flex-wrap gap-3">
+            {[
+              "PyTorch",
+              "TensorFlow",
+              "Scikit-learn",
+              "LangGraph",
+              "LlamaIndex",
+            ].map((skill) => (
+              <span
+                key={skill}
+                className="border border-white/10 px-4 py-3 text-sm text-gray-300 transition hover:border-[#F15A24] hover:text-[#F15A24]"
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        {/* Databases */}
+        <div className="border border-white/10 bg-[#111111] p-6 md:p-8">
+          <div className="flex items-center justify-between">
+            <h3 className="text-xl font-semibold">
+              Databases & Storage
+            </h3>
+            <span className="text-sm text-[#F15A24]">04</span>
+          </div>
+
+          <div className="mt-6 flex flex-wrap gap-3">
+            {[
+              "MySQL",
+              "PostgreSQL",
+              "ChromaDB",
+            ].map((skill) => (
+              <span
+                key={skill}
+                className="border border-white/10 px-4 py-3 text-sm text-gray-300 transition hover:border-[#F15A24] hover:text-[#F15A24]"
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        {/* AI Tools */}
+        <div className="border border-white/10 bg-[#111111] p-6 md:p-8">
+          <div className="flex items-center justify-between">
+            <h3 className="text-xl font-semibold">
+              AI Development Tools
+            </h3>
+            <span className="text-sm text-[#F15A24]">05</span>
+          </div>
+
+          <div className="mt-6 flex flex-wrap gap-3">
+            {[
+              "Claude",
+              "Gemini",
+              "Blackbox AI",
+            ].map((skill) => (
+              <span
+                key={skill}
+                className="border border-white/10 px-4 py-3 text-sm text-gray-300 transition hover:border-[#F15A24] hover:text-[#F15A24]"
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{/* Experience Section */}
+<section
+  id="experience"
+  className="border-t border-white/10 px-6 py-28 md:px-16"
+>
+  <div className="page-container">
+
+    <div className="editorial-grid">
+
+      {/* Left Introduction */}
+      <div className="editorial-left">
+        <p className="mb-5 text-sm uppercase tracking-[0.3em] text-[#F15A24]">
+          04 / Experience
+        </p>
+
+        <h2 className="text-5xl font-bold leading-tight md:text-7xl">
+          Learning by
+          <span className="text-[#F15A24]"> building.</span>
+        </h2>
+
+        <p className="mt-8 max-w-lg text-base leading-8 text-gray-400">
+          My experience is shaped by practical projects,
+          collaborative development and continuous learning.
+          I focus on turning technical knowledge into working
+          applications.
+        </p>
+      </div>
+
+      {/* Right Experience Timeline */}
+      <div className="editorial-right">
+
+        <div className="relative border-l border-white/10 pl-7 md:pl-10">
+
+          {/* Experience 1 */}
+          <article className="relative pb-14">
+            <span className="absolute -left-[33px] top-1 h-3 w-3 rounded-full border-2 border-[#F15A24] bg-[#0A0A0A] md:-left-[45px]" />
+
+            <p className="text-xs uppercase tracking-widest text-[#F15A24]">
+              Internship
+            </p>
+
+            <h3 className="mt-4 text-2xl font-semibold md:text-3xl">
+              Infotact Solutions
+            </h3>
+
+            <p className="mt-2 text-sm text-gray-500">
+              Internship Project · Team Lead
+            </p>
+
+            <p className="mt-5 text-sm leading-7 text-gray-400">
+              Working with a team on CareFlow, a collaborative
+              healthcare project focused on sepsis event data.
+              My responsibilities include coordinating the team,
+              organizing development tasks and contributing to
+              the project workflow.
+            </p>
+
+            <div className="mt-5 flex flex-wrap gap-2">
+              {[
+                "Team Coordination",
+                "Python",
+                "Data Analysis",
+                "GitHub",
+              ].map((item) => (
+                <span
+                  key={item}
+                  className="border border-white/10 px-3 py-2 text-xs text-gray-400"
+                >
+                  {item}
+                </span>
+              ))}
+            </div>
+          </article>
+
+          {/* Experience 2 */}
+          <article className="relative">
+            <span className="absolute -left-[33px] top-1 h-3 w-3 rounded-full border-2 border-[#F15A24] bg-[#0A0A0A] md:-left-[45px]" />
+
+            <p className="text-xs uppercase tracking-widest text-[#F15A24]">
+              Independent Development
+            </p>
+
+            <h3 className="mt-4 text-2xl font-semibold md:text-3xl">
+              AI & ML Projects
+            </h3>
+
+            <p className="mt-2 text-sm text-gray-500">
+              Personal Project Development
+            </p>
+
+            <p className="mt-5 text-sm leading-7 text-gray-400">
+              Exploring machine learning, financial research
+              automation and intelligent applications through
+              hands-on projects such as FinSight AI and Janvoice AI.
+            </p>
+
+            <div className="mt-5 flex flex-wrap gap-2">
+              {[
+                "Machine Learning",
+                "Agentic AI",
+                "Python",
+                "LLM Applications",
+              ].map((item) => (
+                <span
+                  key={item}
+                  className="border border-white/10 px-3 py-2 text-xs text-gray-400"
+                >
+                  {item}
+                </span>
+              ))}
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{/* Education Section */}
+<section
+  id="education"
+  className="border-t border-white/10 px-6 py-28 md:px-16"
+>
+  <div className="page-container">
+
+    <div className="editorial-grid">
+
+      {/* Left Introduction */}
+      <div className="editorial-left">
+        <p className="mb-5 text-sm uppercase tracking-[0.3em] text-[#F15A24]">
+          05 / Education
+        </p>
+
+        <h2 className="text-5xl font-bold leading-tight md:text-7xl">
+          Building the
+          <span className="text-[#F15A24]"> foundation.</span>
+        </h2>
+
+        <p className="mt-8 max-w-lg text-base leading-8 text-gray-400">
+          My academic journey is helping me develop the
+          technical foundation and problem-solving skills
+          needed to work with data, intelligent systems
+          and modern technology.
+        </p>
+      </div>
+
+      {/* Right Education Details */}
+      <div className="editorial-right">
+
+        <article className="border border-white/10 bg-[#111111] p-7 md:p-10">
+
+          <div className="flex flex-wrap items-center justify-between gap-4">
+            <span className="text-xs uppercase tracking-widest text-[#F15A24]">
+              Undergraduate Degree
+            </span>
+
+            <span className="border border-[#F15A24]/40 px-3 py-1 text-xs text-[#F15A24]">
+              Pursuing
+            </span>
+          </div>
+
+          <h3 className="mt-10 text-3xl font-bold md:text-4xl">
+            Bachelor of Technology
+          </h3>
+
+          <p className="mt-3 text-lg text-gray-300">
+            Computer Science & Engineering
+          </p>
+
+          <p className="mt-2 text-sm text-gray-500">
+            Artificial Intelligence & Data Science
+          </p>
+
+          <div className="mt-10 border-t border-white/10 pt-8">
+
+            <div className="grid grid-cols-2 gap-8">
+
+              <div>
+                <p className="text-xs uppercase tracking-widest text-gray-500">
+                  Institution
+                </p>
+                <p className="mt-3 text-sm font-medium text-white">
+                  Gurugram University
+                </p>
+              </div>
+
+              <div>
+                <p className="text-xs uppercase tracking-widest text-gray-500">
+                  Location
+                </p>
+                <p className="mt-3 text-sm font-medium text-white">
+                  Haryana, India
+                </p>
+              </div>
+
+              <div>
+                <p className="text-xs uppercase tracking-widest text-gray-500">
+                  Duration
+                </p>
+                <p className="mt-3 text-sm font-medium text-white">
+                  2025 – 2028
+                </p>
+              </div>
+
+              <div>
+                <p className="text-xs uppercase tracking-widest text-gray-500">
+                  Academic Status
+                </p>
+                <p className="mt-3 text-sm font-medium text-white">
+                  Currently Pursuing
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+          <div className="mt-10 border-t border-white/10 pt-7">
+            <p className="text-xs uppercase tracking-widest text-gray-500">
+              Academic Focus
+            </p>
+
+            <div className="mt-4 flex flex-wrap gap-3">
+              {[
+                "Computer Science",
+                "Artificial Intelligence",
+                "Data Science",
+                "Machine Learning",
+              ].map((item) => (
+                <span
+                  key={item}
+                  className="border border-white/10 px-3 py-2 text-xs text-gray-400"
+                >
+                  {item}
+                </span>
+              ))}
+            </div>
+          </div>
+
+        </article>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 
       {/* Footer */}
