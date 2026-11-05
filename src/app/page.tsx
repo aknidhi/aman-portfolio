@@ -32,6 +32,10 @@ export default function Home() {
             Education
           </Link>
 
+          <Link href="#certifications" className="transition hover:text-white">
+            Certifications
+          </Link>
+
           <Link href="#contact" className="transition hover:text-white">
             Contact
           </Link>
@@ -875,6 +879,117 @@ export default function Home() {
         </article>
       </div>
 
+    </div>
+  </div>
+</section>
+
+
+{/* Certifications & Courses Section */}
+<section
+  id="certifications"
+  className="border-t border-white/10 px-6 py-28 md:px-16"
+>
+  <div className="page-container">
+
+    <div className="editorial-grid">
+
+      {/* Left Introduction */}
+      <div className="editorial-left">
+        <p className="mb-5 text-sm uppercase tracking-[0.3em] text-[#F15A24]">
+          06 / Continuous Learning
+        </p>
+
+        <h2 className="text-5xl font-bold leading-tight md:text-7xl">
+          Always learning.
+          <span className="text-[#F15A24]"> Always growing.</span>
+        </h2>
+
+        <p className="mt-8 max-w-lg text-base leading-8 text-gray-400">
+          Technology keeps evolving, and so does my learning
+          journey. I believe in improving my skills through
+          structured learning, practical exercises and
+          hands-on development.
+        </p>
+      </div>
+
+      {/* Right Credentials */}
+      <div className="editorial-right space-y-5">
+
+        {/* Certifications */}
+        <article className="border border-white/10 bg-[#111111] p-7 md:p-9">
+          <div className="flex items-center justify-between">
+            <p className="text-xs uppercase tracking-widest text-[#F15A24]">
+              01 / Professional Credentials
+            </p>
+            <span className="text-xl text-gray-500">↗</span>
+          </div>
+
+          <h3 className="mt-7 text-2xl font-bold">
+            Certifications
+          </h3>
+
+          <p className="mt-4 text-sm leading-7 text-gray-400">
+            A collection of verified certifications, professional
+            credentials and recognized learning achievements.
+          </p>
+
+          <div className="mt-7 border-t border-white/10 pt-5">
+            <p className="text-sm text-gray-500">
+              Certificate records will be added here.
+            </p>
+          </div>
+        </article>
+
+        {/* Courses */}
+        <article className="border border-white/10 bg-[#111111] p-7 md:p-9">
+          <div className="flex items-center justify-between">
+            <p className="text-xs uppercase tracking-widest text-[#F15A24]">
+              02 / Learning & Development
+            </p>
+            <span className="text-xl text-gray-500">↗</span>
+          </div>
+
+          <h3 className="mt-7 text-2xl font-bold">
+            Courses & Training
+          </h3>
+
+          <p className="mt-4 text-sm leading-7 text-gray-400">
+            Learning programs and training activities that
+            support my development in data analytics,
+            machine learning and artificial intelligence.
+          </p>
+
+          <div className="mt-7 border-t border-white/10 pt-5">
+            <p className="text-sm text-gray-500">
+              Course records will be added here.
+            </p>
+          </div>
+        </article>
+
+        {/* Learning Focus */}
+        <div className="border border-[#F15A24]/20 bg-[#F15A24]/[0.04] p-7">
+          <p className="text-xs uppercase tracking-widest text-[#F15A24]">
+            Current Learning Interests
+          </p>
+
+          <div className="mt-5 flex flex-wrap gap-3">
+            {[
+              "Generative AI",
+              "Machine Learning",
+              "Data Analytics",
+              "Agentic AI",
+            ].map((item) => (
+              <span
+                key={item}
+                className="border border-white/10 px-3 py-2 text-xs text-gray-300"
+              >
+                {item}
+              </span>
+            ))}
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
 </section>
