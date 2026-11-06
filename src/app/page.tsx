@@ -36,6 +36,10 @@ export default function Home() {
             Certifications
           </Link>
 
+          <Link href="#journey" className="transition hover:text-white">
+            Journey
+          </Link>
+
           <Link href="#contact" className="transition hover:text-white">
             Contact
           </Link>
@@ -989,6 +993,133 @@ export default function Home() {
           </div>
         </div>
 
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{/* Journey Section */}
+<section
+  id="journey"
+  className="border-t border-white/10 px-6 py-28 md:px-16"
+>
+  <div className="page-container">
+
+    <div className="editorial-grid">
+
+      {/* Left Introduction */}
+      <div className="editorial-left">
+        <p className="mb-5 text-sm uppercase tracking-[0.3em] text-[#F15A24]">
+          07 / My Journey
+        </p>
+
+        <h2 className="text-5xl font-bold leading-tight md:text-7xl">
+          Progress over
+          <span className="text-[#F15A24]"> perfection.</span>
+        </h2>
+
+        <p className="mt-8 max-w-lg text-base leading-8 text-gray-400">
+          Every project, challenge and learning experience
+          contributes to my growth. This timeline captures
+          important steps in my journey through technology,
+          data and artificial intelligence.
+        </p>
+
+        <div className="mt-12 border-t border-white/10 pt-6">
+          <p className="text-xs uppercase tracking-widest text-gray-500">
+            The direction
+          </p>
+          <p className="mt-3 text-lg text-gray-300">
+            Learn <span className="text-[#F15A24]">/</span>
+            Build <span className="text-[#F15A24]">/</span>
+            Improve
+          </p>
+        </div>
+      </div>
+
+      {/* Right Timeline */}
+      <div className="editorial-right">
+
+        <div className="relative border-l border-white/10 pl-7 md:pl-10">
+
+          {/* Milestone 1 */}
+          <article className="relative pb-12">
+            <span className="absolute -left-[33px] top-1 h-3 w-3 rounded-full border-2 border-[#F15A24] bg-[#0A0A0A] md:-left-[45px]" />
+
+            <p className="text-xs uppercase tracking-widest text-[#F15A24]">
+              2025
+            </p>
+
+            <h3 className="mt-3 text-2xl font-semibold">
+              Academic Journey
+            </h3>
+
+            <p className="mt-4 text-sm leading-7 text-gray-400">
+              Began my B.Tech journey in Computer Science
+              and Engineering, specializing in Artificial
+              Intelligence and Data Science.
+            </p>
+          </article>
+
+          {/* Milestone 2 */}
+          <article className="relative pb-12">
+            <span className="absolute -left-[33px] top-1 h-3 w-3 rounded-full border-2 border-[#F15A24] bg-[#0A0A0A] md:-left-[45px]" />
+
+            <p className="text-xs uppercase tracking-widest text-[#F15A24]">
+              2026
+            </p>
+
+            <h3 className="mt-3 text-2xl font-semibold">
+              Exploring AI & Data
+            </h3>
+
+            <p className="mt-4 text-sm leading-7 text-gray-400">
+              Continued developing practical skills in
+              machine learning, data analytics and intelligent
+              applications through hands-on projects.
+            </p>
+          </article>
+
+          {/* Milestone 3 */}
+          <article className="relative pb-12">
+            <span className="absolute -left-[33px] top-1 h-3 w-3 rounded-full border-2 border-[#F15A24] bg-[#0A0A0A] md:-left-[45px]" />
+
+            <p className="text-xs uppercase tracking-widest text-[#F15A24]">
+              2026
+            </p>
+
+            <h3 className="mt-3 text-2xl font-semibold">
+              FinSight AI
+            </h3>
+
+            <p className="mt-4 text-sm leading-7 text-gray-400">
+              Developed an AI-powered financial research
+              application combining stock analysis,
+              portfolio insights and AI-assisted research.
+            </p>
+          </article>
+
+          {/* Milestone 4 */}
+          <article className="relative">
+            <span className="absolute -left-[33px] top-1 h-3 w-3 rounded-full border-2 border-[#F15A24] bg-[#0A0A0A] md:-left-[45px]" />
+
+            <p className="text-xs uppercase tracking-widest text-[#F15A24]">
+              2026
+            </p>
+
+            <h3 className="mt-3 text-2xl font-semibold">
+              Internship & Collaboration
+            </h3>
+
+            <p className="mt-4 text-sm leading-7 text-gray-400">
+              Joined Infotact Solutions and took the team
+              lead role in the collaborative CareFlow
+              healthcare project.
+            </p>
+          </article>
+
+        </div>
       </div>
     </div>
   </div>
