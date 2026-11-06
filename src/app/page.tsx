@@ -40,6 +40,10 @@ export default function Home() {
             Journey
           </Link>
 
+          <Link href="#blog" className="transition hover:text-white">
+            Blog
+          </Link>
+
           <Link href="#contact" className="transition hover:text-white">
             Contact
           </Link>
@@ -1121,6 +1125,154 @@ export default function Home() {
 
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+
+{/* Blog & Insights Section */}
+<section
+  id="blog"
+  className="border-t border-white/10 px-6 py-28 md:px-16"
+>
+  <div className="page-container">
+
+    {/* Section Header */}
+    <div className="mb-16 flex flex-col justify-between gap-6 md:flex-row md:items-end">
+      <div>
+        <p className="mb-5 text-sm uppercase tracking-[0.3em] text-[#F15A24]">
+          08 / Blog & Insights
+        </p>
+
+        <h2 className="max-w-3xl text-5xl font-bold leading-tight md:text-7xl">
+          Thoughts into
+          <span className="text-[#F15A24]"> knowledge.</span>
+        </h2>
+      </div>
+
+      <p className="max-w-sm text-base leading-7 text-gray-400">
+        Notes, ideas and lessons from my journey through
+        artificial intelligence, machine learning and data.
+      </p>
+    </div>
+
+    {/* Featured Article */}
+    <article className="editorial-grid border-y border-white/10 py-12">
+
+      {/* Article Information */}
+      <div className="editorial-left">
+        <p className="text-xs uppercase tracking-widest text-[#F15A24]">
+          Featured Insight
+        </p>
+
+        <h3 className="mt-7 text-4xl font-bold leading-tight md:text-5xl">
+          Building an AI-powered financial research agent.
+        </h3>
+
+        <p className="mt-6 text-base leading-8 text-gray-400">
+          A look at the ideas, tools and development process
+          behind FinSight AI — from financial data analysis
+          to AI-assisted research workflows.
+        </p>
+
+        <div className="mt-8 flex flex-wrap gap-3 text-xs text-gray-500">
+          <span>AI / Machine Learning</span>
+          <span className="text-[#F15A24]">/</span>
+          <span>Project Development</span>
+          <span className="text-[#F15A24]">/</span>
+          <span>Coming soon</span>
+        </div>
+
+        <div className="mt-9">
+          <span className="inline-flex items-center gap-3 text-sm font-semibold text-gray-300">
+            Article coming soon <span className="text-[#F15A24]">↗</span>
+          </span>
+        </div>
+      </div>
+
+      {/* Featured Article Visual */}
+      <div className="editorial-right">
+        <div className="relative flex min-h-[340px] flex-col justify-between overflow-hidden border border-white/10 bg-[#15110F] p-8 md:min-h-[400px] md:p-10">
+
+          <div className="absolute -right-16 -top-16 h-64 w-64 rounded-full bg-[#F15A24]/15 blur-[100px]" />
+
+          <div className="relative flex items-center justify-between">
+            <span className="text-sm font-semibold">
+              NOTES<span className="text-[#F15A24]">.</span>
+            </span>
+            <span className="text-xs text-gray-500">
+              01 / FEATURED
+            </span>
+          </div>
+
+          <div className="relative">
+            <p className="text-xs uppercase tracking-widest text-gray-500">
+              AI × FINANCE
+            </p>
+
+            <h4 className="mt-5 text-4xl font-bold leading-tight md:text-5xl">
+              Research.
+              <br />
+              Reason.
+              <br />
+              <span className="text-[#F15A24]">Build.</span>
+            </h4>
+          </div>
+
+          <div className="relative border-t border-white/10 pt-5">
+            <p className="text-xs text-gray-500">
+              IDEAS, EXPERIMENTS & ENGINEERING
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    {/* Supporting Articles */}
+    <div className="mt-10 grid gap-6 md:grid-cols-2">
+
+      <article className="group border border-white/10 bg-[#111111] p-7 transition hover:border-[#F15A24]/50 md:p-9">
+        <p className="text-xs uppercase tracking-widest text-[#F15A24]">
+          Machine Learning
+        </p>
+
+        <h3 className="mt-8 text-2xl font-bold leading-snug">
+          Understanding the journey from data to prediction.
+        </h3>
+
+        <p className="mt-5 text-sm leading-7 text-gray-400">
+          Notes on preparing data, exploring patterns and
+          understanding the machine learning workflow.
+        </p>
+
+        <div className="mt-10 border-t border-white/10 pt-5">
+          <span className="text-sm text-gray-500 transition group-hover:text-[#F15A24]">
+            Article coming soon ↗
+          </span>
+        </div>
+      </article>
+
+      <article className="group border border-white/10 bg-[#111111] p-7 transition hover:border-[#F15A24]/50 md:p-9">
+        <p className="text-xs uppercase tracking-widest text-[#F15A24]">
+          Developer Notes
+        </p>
+
+        <h3 className="mt-8 text-2xl font-bold leading-snug">
+          What building practical AI applications teaches you.
+        </h3>
+
+        <p className="mt-5 text-sm leading-7 text-gray-400">
+          Reflections on project development, problem-solving,
+          experimentation and learning through implementation.
+        </p>
+
+        <div className="mt-10 border-t border-white/10 pt-5">
+          <span className="text-sm text-gray-500 transition group-hover:text-[#F15A24]">
+            Article coming soon ↗
+          </span>
+        </div>
+      </article>
+
     </div>
   </div>
 </section>
