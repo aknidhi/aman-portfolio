@@ -1444,11 +1444,122 @@ export default function Home() {
   </div>
 </section>
 
+      
+      {/* Portfolio Footer */}
+      <footer className="border-t border-white/10 px-6 py-12 md:px-16">
+        <div className="page-container">
 
-      {/* Footer */}
-      <footer className="border-t border-white/10 px-6 py-6 text-center text-xs text-gray-600 md:px-16">
-        © 2026 Aman Nidhi. All rights reserved.
+          <div className="grid gap-12 md:grid-cols-[45fr_55fr]">
+
+            {/* Brand */}
+            <div>
+              <a
+                href="#"
+                className="text-3xl font-bold tracking-tight text-white"
+              >
+                AN<span className="text-[#F15A24]">.</span>
+              </a>
+
+              <p className="mt-5 max-w-sm text-sm leading-7 text-gray-400">
+                Data Analytics & ML Developer.
+                Building intelligent solutions through data,
+                machine learning and practical technology.
+              </p>
+
+              <p className="mt-6 text-xs uppercase tracking-widest text-gray-600">
+                Haryana, India
+              </p>
+            </div>
+
+            {/* Navigation and Social Links */}
+            <div className="grid grid-cols-2 gap-10 sm:grid-cols-3">
+
+              <div>
+                <p className="mb-5 text-xs uppercase tracking-widest text-[#F15A24]">
+                  Explore
+                </p>
+
+                <div className="flex flex-col gap-4 text-sm text-gray-400">
+                  <a href="#about" className="transition hover:text-white">About</a>
+                  <a href="#projects" className="transition hover:text-white">Projects</a>
+                  <a href="#experience" className="transition hover:text-white">Experience</a>
+                  <a href="#education" className="transition hover:text-white">Education</a>
+                  <a href="#certifications" className="transition hover:text-white">Certifications</a>
+                </div>
+              </div>
+
+              <div>
+                <p className="mb-5 text-xs uppercase tracking-widest text-[#F15A24]">
+                  Discover
+                </p>
+
+                <div className="flex flex-col gap-4 text-sm text-gray-400">
+                  <a href="#journey" className="transition hover:text-white">Journey</a>
+                  <a href="#blog" className="transition hover:text-white">Blog & Insights</a>
+                  <a href="#contact" className="transition hover:text-white">Contact</a>
+                  <a href="#skills" className="transition hover:text-white">Skills</a>
+                </div>
+              </div>
+
+              <div>
+                <p className="mb-5 text-xs uppercase tracking-widest text-[#F15A24]">
+                  Connect
+                </p>
+
+                <div className="flex flex-col gap-4 text-sm text-gray-400">
+                  <a
+                    href="https://github.com/aknidhi"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="transition hover:text-white"
+                  >
+                    GitHub ↗
+                  </a>
+
+                  <a
+                    href="https://www.linkedin.com/in/aman-kumar-nidhi-484454209"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="transition hover:text-white"
+                  >
+                    LinkedIn ↗
+                  </a>
+
+                  <a
+                    href="mailto:aknidhi06@gmail.com"
+                    className="transition hover:text-white"
+                  >
+                    Email ↗
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          {/* Bottom Bar */}
+          <div className="mt-16 flex flex-col justify-between gap-5 border-t border-white/10 pt-7 text-xs text-gray-500 sm:flex-row sm:items-center">
+
+            <p>
+              © 2026 Aman Nidhi. All rights reserved.
+            </p>
+
+            <div className="flex items-center gap-6">
+              <span>Designed with intention.</span>
+
+              <a
+                href="#"
+                className="text-white transition hover:text-[#F15A24]"
+              >
+                Back to top ↑
+              </a>
+            </div>
+
+          </div>
+
+        </div>
       </footer>
+
     </main>
   );
 }
