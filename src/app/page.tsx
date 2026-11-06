@@ -1278,6 +1278,173 @@ export default function Home() {
 </section>
 
 
+{/* Contact Section */}
+<section
+  id="contact"
+  className="border-t border-white/10 px-6 py-28 md:px-16"
+>
+  <div className="page-container">
+
+    <div className="editorial-grid">
+
+      {/* Left Introduction */}
+      <div className="editorial-left">
+        <p className="mb-5 text-sm uppercase tracking-[0.3em] text-[#F15A24]">
+          09 / Get In Touch
+        </p>
+
+        <h2 className="text-5xl font-bold leading-tight md:text-7xl">
+          Have an idea?
+          <span className="text-[#F15A24]"> Let's talk.</span>
+        </h2>
+
+        <p className="mt-8 max-w-lg text-base leading-8 text-gray-400">
+          I'm always interested in meaningful conversations,
+          exciting projects and opportunities to learn,
+          collaborate and build something useful.
+        </p>
+
+        <div className="mt-12 space-y-7 border-t border-white/10 pt-8">
+
+          <div>
+            <p className="text-xs uppercase tracking-widest text-gray-500">
+              Email
+            </p>
+            <a
+              href="mailto:aknidhi06@gmail.com"
+              className="mt-3 inline-block text-lg text-white transition hover:text-[#F15A24]"
+            >
+              aknidhi06@gmail.com ↗
+            </a>
+          </div>
+
+          <div>
+            <p className="text-xs uppercase tracking-widest text-gray-500">
+              LinkedIn
+            </p>
+            <a
+              href="https://www.linkedin.com/in/aman-kumar-nidhi-484454209"
+              target="_blank"
+              rel="noreferrer"
+              className="mt-3 inline-block text-lg text-white transition hover:text-[#F15A24]"
+            >
+              Connect on LinkedIn ↗
+            </a>
+          </div>
+
+          <div>
+            <p className="text-xs uppercase tracking-widest text-gray-500">
+              GitHub
+            </p>
+            <a
+              href="https://github.com/aknidhi"
+              target="_blank"
+              rel="noreferrer"
+              className="mt-3 inline-block text-lg text-white transition hover:text-[#F15A24]"
+            >
+              Explore my repositories ↗
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      {/* Right Contact Form */}
+      <div className="editorial-right">
+        <form
+          action="mailto:aknidhi06@gmail.com"
+          method="post"
+          encType="text/plain"
+          className="border border-white/10 bg-[#111111] p-7 md:p-10"
+        >
+          <p className="text-xs uppercase tracking-widest text-[#F15A24]">
+            Send a message
+          </p>
+
+          <h3 className="mt-5 text-2xl font-bold">
+            Let's start a conversation.
+          </h3>
+
+          <div className="mt-9 space-y-6">
+
+            <div>
+              <label htmlFor="contact-name" className="mb-2 block text-sm text-gray-400">
+                Your name
+              </label>
+              <input
+                id="contact-name"
+                name="name"
+                type="text"
+                placeholder="Enter your name"
+                required
+                className="w-full border border-white/10 bg-[#0A0A0A] px-4 py-4 text-sm text-white outline-none transition placeholder:text-gray-600 focus:border-[#F15A24]"
+              />
+            </div>
+
+            <div>
+              <label htmlFor="contact-email" className="mb-2 block text-sm text-gray-400">
+                Email address
+              </label>
+              <input
+                id="contact-email"
+                name="email"
+                type="email"
+                placeholder="Enter your email"
+                required
+                className="w-full border border-white/10 bg-[#0A0A0A] px-4 py-4 text-sm text-white outline-none transition placeholder:text-gray-600 focus:border-[#F15A24]"
+              />
+            </div>
+
+            <div>
+              <label htmlFor="contact-subject" className="mb-2 block text-sm text-gray-400">
+                Subject
+              </label>
+              <input
+                id="contact-subject"
+                name="subject"
+                type="text"
+                placeholder="What is this about?"
+                required
+                className="w-full border border-white/10 bg-[#0A0A0A] px-4 py-4 text-sm text-white outline-none transition placeholder:text-gray-600 focus:border-[#F15A24]"
+              />
+            </div>
+
+            <div>
+              <label htmlFor="contact-message" className="mb-2 block text-sm text-gray-400">
+                Message
+              </label>
+              <textarea
+                id="contact-message"
+                name="message"
+                rows={5}
+                placeholder="Tell me a little about your idea..."
+                required
+                className="w-full resize-y border border-white/10 bg-[#0A0A0A] px-4 py-4 text-sm text-white outline-none transition placeholder:text-gray-600 focus:border-[#F15A24]"
+              />
+            </div>
+
+            <button
+              type="submit"
+              className="flex w-full items-center justify-center gap-3 bg-[#F15A24] px-6 py-4 text-sm font-semibold text-white transition hover:bg-[#d94b19]"
+            >
+              Send Message <span>↗</span>
+            </button>
+
+            <p className="text-xs leading-6 text-gray-500">
+              This is a temporary email-based form. We'll connect
+              it to a secure backend with message storage and
+              submission feedback in a later milestone.
+            </p>
+
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
       {/* Footer */}
       <footer className="border-t border-white/10 px-6 py-6 text-center text-xs text-gray-600 md:px-16">
         © 2026 Aman Nidhi. All rights reserved.
